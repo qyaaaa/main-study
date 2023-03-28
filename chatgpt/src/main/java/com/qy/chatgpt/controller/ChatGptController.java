@@ -28,7 +28,7 @@ public class ChatGptController {
             .build();
 
     /**
-     * 直接访问chatgpt
+     * 直接访问chatgpt https://platform.openai.com/account/usage
      * @param prompt
      * @return
      */
