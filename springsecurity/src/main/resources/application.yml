@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+## spring security配置
+spring:
+  #设置固定账号密码
+  #  security:
+  #    user:
+  #      name: qy
+  #      password: 123
+  datasource:
+    username: root
+    password: abc123_
+    url: jdbc:mysql://localhost:3306/study?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+# 配置 MyBatis
+mybatis:
+  mapper-locations: classpath:mappers/*
+  type-aliases-package: com.qy.springsecurity.entity
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    org:
+      springframework:
+        security: info
