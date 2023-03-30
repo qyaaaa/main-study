@@ -26,9 +26,11 @@
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
 
+		<!--当idea版本升级可能需要升级lombok版本	-->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
+			<version>1.18.14</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
