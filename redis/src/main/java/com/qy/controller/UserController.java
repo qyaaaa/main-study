@@ -11,7 +11,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
@@ -59,6 +61,29 @@ public class UserController {
     @GetMapping("/detail-list")
     public List<User> detailList(String search) {
         List<User>  users = (List<User>) listOperations.leftPop(search);
+        return users;
+    }
+
+    @PostMapping("/save-hash")
+    public void saveHash() {
+        Map<String, User> map = new HashMap<>();
+        for (long i = 0; i < 2 ; i++) {
+            User user = new User();
+            user.setId(i);
+            user.setContent("test");
+            user.setName("qy");
+            user.setDesc("2023");
+            map.put(String.valueOf(i), user);
+        }
+        for (String key : map.keySet()) {
+            User user = map.get(key);
+            hashOperations.put("users", key, user);
+        }
+    }
+
+    @GetMapping("/detail-hash")
+    public Map<String, Object> detailHash(String search) {
+        Map<String, Object> users = hashOperations.entries(search);
         return users;
     }
 }
