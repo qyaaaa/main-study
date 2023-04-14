@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加chatgpt demo">
-      <change beforePath="$PROJECT_DIR$/chatgpt/src/main/java/com/qy/chatgpt/controller/ChatGptController.java" beforeDir="false" afterPath="$PROJECT_DIR$/chatgpt/src/main/java/com/qy/chatgpt/controller/ChatGptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatgpt/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/chatgpt/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatgpt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/es/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/es/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springsecurity/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,31 +35,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2NRtAKLAX9krufZezlzVaku1c37" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "jdk.selected.JAVA_MODULE": "temurin-1.8 (2)",
-    "last_opened_file_path": "C:/project/main-study",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\project\main-study\chatgpt\src\main\java\com\qy\chatgpt" />
     </key>
@@ -118,6 +112,17 @@
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 添加esay-es demo" />
