@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/easy-es/pom.xml" />
         <option value="$PROJECT_DIR$/es/pom.xml" />
         <option value="$PROJECT_DIR$/chatgpt/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity/pom.xml" />
         <option value="$PROJECT_DIR$/redis/pom.xml" />
       </list>

@@ -1,0 +1,31 @@
+spring:
+  application:
+    #服务名称
+    name: nacos-service
+  profiles:
+    active: dev
+  cloud:
+    nacos:
+      config:
+        # 配置文件的环境
+        group: ${spring.profiles.active}
+        # 配置文件的格式
+        file-extension: yml
+        # 配置中心的地址
+        server-addr: 127.0.0.1:8848
+        # 配置文件prefix
+        prefix: ${spring.application.name}
+        #命名空间
+        namespace: 6f6772d7-c91f-4ecb-b79b-01030c43d9c1
+        extension-configs:
+          - dataId: datasource-${spring.profiles.active}.yaml
+            group: ${spring.profiles.active}
+            #是否自动刷新
+            refresh: true
+          - dataId: mybatis-plus-${spring.profiles.active}.yaml
+            group: ${spring.profiles.active}
+            refresh: true
+      discovery:
+        server-addr: 127.0.0.1:8848
+        group: ${spring.profiles.active}
+        namespace: 6f6772d7-c91f-4ecb-b79b-01030c43d9c1
