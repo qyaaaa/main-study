@@ -7,6 +7,13 @@
     <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加chatgpt demo">
       <change beforePath="$PROJECT_DIR$/nacos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nacos/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatgpt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatgpt/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/es/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/es/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/es/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springsecurity/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +74,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\project\main-study\chatgpt\src\main\java\com\qy\chatgpt" />
     </key>
@@ -156,7 +171,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 添加esay-es demo" />
