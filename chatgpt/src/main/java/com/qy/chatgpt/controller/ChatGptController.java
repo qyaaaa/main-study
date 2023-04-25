@@ -1,16 +1,18 @@
 package com.qy.chatgpt.controller;
 
-import com.qy.chatgpt.model.ChatGptChina;
 import com.qy.chatgpt.model.ChatGptRequest;
 import com.squareup.moshi.Moshi;
-import okhttp3.*;
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
 @RestController
@@ -57,21 +59,22 @@ public class ChatGptController {
 
     /**
      * 国内代理chatgpt https://www.openai-proxy.com/
-     * @param content
+     * @param prompt
      * @return
      */
     @PostMapping("/search-china")
-    public String searchFromChina(String content) {
-        ChatGptChina chatGptChina = new ChatGptChina();
+    public String searchFromChina(String prompt) {
+        ChatGptRequest completionRequest = new ChatGptRequest();
         MediaType MediaTypeJson = MediaType.get("application/json");
-        chatGptChina.setContent(content);
-        chatGptChina.setApiKey(APIKEY);
-        chatGptChina.setSessionId(UUID.randomUUID().toString());
+        completionRequest.setPrompt(prompt);
 
-        String reqJson = new Moshi.Builder().build().adapter(ChatGptChina.class).toJson(chatGptChina);
+        String reqJson = new Moshi.Builder().build().adapter(ChatGptRequest.class).toJson(completionRequest);
+        System.out.println("reqJson: " + reqJson);
         System.out.println("reqJson: " + reqJson);
         Request request = new Request.Builder()
-                .url("https://api.openai-proxy.com/pro/chat/completions")
+                .url("https://api.openai-proxy.com/v1/completions")
+                // 将 API_KEY 替换成你自己的 API_KEY
+                .header("Authorization", "Bearer " + APIKEY)
                 .post(RequestBody.create(MediaTypeJson, reqJson))
                 .build();
 

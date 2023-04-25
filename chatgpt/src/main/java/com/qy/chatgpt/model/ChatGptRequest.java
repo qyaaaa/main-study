@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class ChatGptRequest {
+    // 模型: https://platform.openai.com/docs/api-reference/models/list
     private String model = "text-davinci-003";
     private String prompt;
     private Integer max_tokens = 256;
