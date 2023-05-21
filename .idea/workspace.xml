@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加chatgpt demo">
-      <change beforePath="$PROJECT_DIR$/nacos/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nacos/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/nacos/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatgpt/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chatgpt/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chatgpt/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/es/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/es/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/es/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/redis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springsecurity/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="fix-pom" />
+        <entry key="$PROJECT_DIR$" value="feat-nacos" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -71,14 +68,18 @@
   </component>
   <component name="ProjectId" id="2NRtAKLAX9krufZezlzVaku1c37" />
   <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -87,7 +88,7 @@
       <recent name="C:\project\main-study\chatgpt\src\main\java\com\qy\chatgpt" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NacosApplication">
+  <component name="RunManager" selected="Spring Boot.TxApplication">
     <configuration name="ChatgptApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qy.chatgpt.ChatgptApplication" />
       <module name="chatgpt" />
@@ -127,8 +128,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChatgptApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="chatgpt" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qy.chatgpt.ChatgptApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EasyEsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="es" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qy.es.EasyEsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NacosApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="nacos" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qy.NacosApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qy.RedisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="springsecurity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qy.springsecurity.SpringSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tx" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qy.tx.TxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EasyEsApplication" />
+        <item itemvalue="Application.ChatgptApplication" />
         <item itemvalue="Application.NacosApplication" />
         <item itemvalue="Application.ChatgptApplication" />
         <item itemvalue="Application.EasyEsApplication" />
@@ -143,6 +188,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679638577651</updated>
+      <workItem from="1684548438617" duration="15485000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 添加esay-es demo">
       <created>1679644221399</created>
@@ -161,6 +207,9 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -176,5 +225,26 @@
     <MESSAGE value="feat: 添加esay-es demo" />
     <MESSAGE value="feat: 添加chatgpt demo" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: 添加chatgpt demo" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxCosServiceImpl.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxSmsServiceImpl.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxSmsServiceImpl.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
