@@ -1,0 +1,14 @@
+tencent:
+  cos:
+    accessKey:
+    secretKey:
+    bucket: 'ap-shanghai'
+    bucketName: 'qy-1302457322'
+    host: 'https://qy-1302457322.cos.ap-shanghai.myqcloud.com'
+  sms:
+    accessKey:
+    secretKey:
+    region: 'ap-guangzhou'
+    sdkAppid: '1400823025'
+    templateId: '1802462'
+    signName: "???????"

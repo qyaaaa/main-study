@@ -8,16 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springsecurity" />
+        <module name="tx" />
         <module name="chatgpt" />
         <module name="es" />
-        <module name="nacos" />
         <module name="redis" />
+        <module name="nacos" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="easy-es" target="1.5" />
-      <module name="redis" target="8" />
-      <module name="springsecurity" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -27,6 +26,7 @@
       <module name="nacos" options="-parameters" />
       <module name="redis" options="-parameters" />
       <module name="springsecurity" options="-parameters" />
+      <module name="tx" options="-parameters" />
     </option>
   </component>
 </project>
