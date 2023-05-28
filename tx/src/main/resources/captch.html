@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--https://cloud.tencent.com/document/product/1110/36841-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web 前端接入示例</title>
+    <!-- 验证码程序依赖(必须)。请勿修改以下程序依赖，如通过其他手段规避加载，会导致验证码无法正常更新，对抗能力无法保证，甚至引起误拦截。 -->
+    <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
+</head>
+
+<body>
+<button id="CaptchaId" type="button">验证</button>
+</body>
+
+<script>
+
+    // 定义回调函数
+    function callback(res) {
+        // 第一个参数传入回调结果，结果如下：
+        // ret         Int       验证结果，0：验证成功。2：用户主动关闭验证码。
+        // ticket      String    验证成功的票据，当且仅当 ret = 0 时 ticket 有值。
+        // CaptchaAppId       String    验证码应用ID。
+        // bizState    Any       自定义透传参数。
+        // randstr     String    本次验证的随机串，后续票据校验时需传递该参数。
+        console.log('callback:', res);
+
+
+        // res（用户主动关闭验证码）= {ret: 2, ticket: null}
+        // res（验证成功） = {ret: 0, ticket: "String", randstr: "String"}
+        // res（请求验证码发生错误，验证码自动返回terror_前缀的容灾票据） = {ret: 0, ticket: "String", randstr: "String",  errorCode: Number, errorMessage: "String"}
+        // 此处代码仅为验证结果的展示示例，真实业务接入，建议基于ticket和errorCode情况做不同的业务处理
+        if (res.ret === 0) {
+            // 复制结果至剪切板
+            var str = '【randstr】->【' + res.randstr + '】      【ticket】->【' + res.ticket + '】';
+            var ipt = document.createElement('input');
+            ipt.value = str;
+            document.body.appendChild(ipt);
+            ipt.select();
+            document.execCommand("Copy");
+            document.body.removeChild(ipt);
+            alert('1. 返回结果（randstr、ticket）已复制到剪切板，ctrl+v 查看。2. 打开浏览器控制台，查看完整返回结果。');
+        }
+    }
+
+    // 定义验证码js加载错误处理函数
+   function loadErrorCallback() {
+        var appid = '您的CaptchaAppId';
+        // 生成容灾票据或自行做其它处理
+        var ticket = 'terror_1001_' + appid + '_' + Math.floor(new Date().getTime() / 1000);
+        callback({
+          ret: 0,
+          randstr: '@'+ Math.random().toString(36).substr(2),
+          ticket: ticket,
+          errorCode: 1001,
+          errorMessage: 'jsload_error'
+        });
+     }
+
+    // 定义验证码触发事件
+    // https://blog.csdn.net/weixin_44594984/article/details/123675962?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522168523496016800188555414%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=168523496016800188555414&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-2-123675962-null-null.142^v88^insert_down38v5,239^v2^insert_chatgpt&utm_term=%E8%85%BE%E8%AE%AF%E4%BA%91%E5%9B%BE%E5%BD%A2%E9%AA%8C%E8%AF%81%E9%9B%86%E6%88%90&spm=1018.2226.3001.4187
+    window.onload = function(){
+        document.getElementById('CaptchaId').onclick = function(){
+            try {
+                let CaptchaAppId = '192052264';
+                let captcha = new TencentCaptcha(CaptchaAppId, (res) => {
+					// res（用户主动关闭验证码）= {ret: 2, ticket: null}
+					// res（用户滑动验证成功）= {ret: 0, ticket: "String", randstr: "String"}
+					if (res.ret === 0) {
+						// 滑动验证成功后，给后端发送数据，CaptchaAppld可以不传
+                        // name和password 根据需求和逻辑传
+                        // Ticket是必须的票据，大概长这样WrBrJkE7Ohu_vMdXKUBx3O7Pn9kHbG6Nv7WfUr6P
+                        // Randstr是必须的前端回调函数返回的随机字符串，大概长这样“@tpR”
+						var data = {
+							Ticket: res.ticket,
+							CaptchaAppld: res.appid,
+							Randstr: res.randstr,
+							name: this.username,
+							password: this.password,
+						};
+						// 传后台前可以加句console.log(data)看一下数据，验证一下
+						console.log(data)
+                        // 把数据传给后端，如果没写后端，可以先用腾讯的云API验证
+						axios.post('http://127.0.0.1:8000/api/',data).then((res) => {
+                            // 后端返回的数据通过了=1 ， else是不通过， catch是数据发送有问题
+                            if (res.data.dic.static === 1){
+								alert('通过了验证')
+                                console.log(res)
+                            }else {
+								alert('没有成功划开？')
+                            }
+                            }).catch((errors) =>{
+								console.log('发送错误')
+                        })
+					} else {
+
+					}
+				});
+                // 调用方法，显示验证码
+                captcha.show();
+            } catch (error) {
+            // 加载异常，调用验证码js加载错误处理函数
+                loadErrorCallback();
+            }
+        }
+    }
+</script>
+
+</html>
