@@ -2,6 +2,7 @@ package com.qy.tx.service.Impl;
 
 import com.qy.tx.config.SmsConfig;
 import com.qy.tx.service.TxSmsService;
+import com.tencentcloudapi.captcha.v20190722.models.DescribeCaptchaResultResponse;
 import com.tencentcloudapi.common.Credential;
 import com.tencentcloudapi.common.exception.TencentCloudSDKException;
 import com.tencentcloudapi.common.profile.ClientProfile;
@@ -92,13 +93,14 @@ public class TxSmsServiceImpl implements TxSmsService {
             /* 通过 client 对象调用 SendSms 方法发起请求。注意请求方法名与请求对象是对应的
              * 返回的 res 是一个 SendSmsResponse 类的实例，与请求对象对应 */
             SendSmsResponse res = client.SendSms(req);
-
+            log.info(res.getSendStatusSet().toString());
             if ("Ok".equals(res.getSendStatusSet()[0].getCode())) {
                 return Boolean.TRUE;
             }
         } catch (TencentCloudSDKException e) {
+            log.error(e.toString());
             return Boolean.FALSE;
         }
-        return false;
+        return Boolean.FALSE;
     }
 }
