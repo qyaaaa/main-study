@@ -9,10 +9,12 @@ import com.tencentcloudapi.common.Credential;
 import com.tencentcloudapi.common.exception.TencentCloudSDKException;
 import com.tencentcloudapi.common.profile.ClientProfile;
 import com.tencentcloudapi.common.profile.HttpProfile;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
+@Slf4j
 public class TxCaptchaServiceImpl implements TxCaptchaService {
 
     @Autowired
@@ -46,6 +48,7 @@ public class TxCaptchaServiceImpl implements TxCaptchaService {
             DescribeCaptchaResultResponse resp = client.DescribeCaptchaResult(req);
             // 输出json格式的字符串回包
             System.out.println(DescribeCaptchaResultResponse.toJsonString(resp));
+            log.info(DescribeCaptchaResultResponse.toJsonString(resp));
             Long evilLevel = resp.getEvilLevel();
             if (evilLevel == 0) {
                 return Boolean.TRUE;

@@ -1,3 +1,7 @@
+spring:
+  #应用名称
+  application:
+    name: test
 tencent:
   cos:
     accessKey:
@@ -15,6 +19,5 @@ tencent:
   captcha:
     accessKey:
     secretKey:
-    captchaAppId:
-    appSecretKey:
-
+    captchaAppId: 192052264
+    appSecretKey: 'ztlagkg04bkS8RPYw5KvBE52j'

@@ -240,20 +240,4 @@
     <MESSAGE value="feat: 添加chatgpt demo" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: 添加chatgpt demo" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxSmsServiceImpl.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxSmsServiceImpl.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
 </project>
