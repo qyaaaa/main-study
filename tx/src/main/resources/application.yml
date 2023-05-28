@@ -12,3 +12,9 @@ tencent:
     sdkAppid: '1400823025'
     templateId: '1802462'
     signName: "???????"
+  captcha:
+    accessKey:
+    secretKey:
+    captchaAppId:
+    appSecretKey:
+

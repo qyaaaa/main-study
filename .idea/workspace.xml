@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加chatgpt demo">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加chatgpt demo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat-nacos" />
+        <entry key="$PROJECT_DIR$" value="feat-tx" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,16 +63,6 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
-  }
-}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -87,8 +70,11 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\project\main-study\chatgpt\src\main\java\com\qy\chatgpt" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qy.tx.config" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.TxApplication">
+  <component name="RunManager" selected="Application.TxApplication">
     <configuration name="ChatgptApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qy.chatgpt.ChatgptApplication" />
       <module name="chatgpt" />
@@ -121,6 +107,32 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.qy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TxApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.tx.TxApplication" />
+      <module name="tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qy.tx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TxCaptchaServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.tx.service.Impl.TxCaptchaServiceImpl" />
+      <module name="tx" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qy.tx.service.Impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -172,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TxApplication" />
+        <item itemvalue="Application.TxCaptchaServiceImpl" />
         <item itemvalue="Application.EasyEsApplication" />
         <item itemvalue="Application.ChatgptApplication" />
         <item itemvalue="Application.NacosApplication" />
-        <item itemvalue="Application.ChatgptApplication" />
-        <item itemvalue="Application.EasyEsApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -188,7 +200,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679638577651</updated>
-      <workItem from="1684548438617" duration="15485000" />
+      <workItem from="1684548438617" duration="18528000" />
+      <workItem from="1684844416012" duration="63000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 添加esay-es demo">
       <created>1679644221399</created>
@@ -220,6 +233,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 添加esay-es demo" />
@@ -229,11 +243,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxCosServiceImpl.java</url>
-          <line>53</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/tx/src/main/java/com/qy/tx/service/Impl/TxSmsServiceImpl.java</url>
           <line>26</line>
