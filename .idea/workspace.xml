@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加chatgpt demo" />
+    <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加一个微信小程序的键盘组件">
+      <change afterPath="$PROJECT_DIR$/content-check/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,8 +39,8 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feat-nacos" />
-                    <option name="lastUsedInstant" value="1681805953" />
+                    <option name="branchName" value="feat-keyboard" />
+                    <option name="lastUsedInstant" value="1692838924" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
@@ -59,28 +62,46 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2NRtAKLAX9krufZezlzVaku1c37" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "jdk.selected.JAVA_MODULE": "zulu-1.8",
+    "last_opened_file_path": "C:/project/ky/ky-platform-api",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\project\qy\main-study\content-check\src\main\resources" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\project\qy\main-study\excel\src\main\resources" />
       <recent name="C:\project\main-study\chatgpt\src\main\java\com\qy\chatgpt" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.qy.tx.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TxApplication">
-    <configuration name="ChatgptApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.chatgpt.ChatgptApplication" />
-      <module name="chatgpt" />
+  <component name="RunManager" selected="Application.test">
+    <configuration name="GreenTextCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.GreenTextCheck" />
+      <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.chatgpt.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EasyEsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.es.EasyEsApplication" />
-      <module name="es" />
+    <configuration name="ImageCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.ImageCheck" />
+      <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.es.service.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NacosApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.NacosApplication" />
-      <module name="nacos" />
+    <configuration name="TextCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.TextCheck" />
+      <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +135,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TxApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.tx.TxApplication" />
-      <module name="tx" />
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.test" />
+      <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.tx.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,15 +148,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TxCaptchaServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.tx.service.Impl.TxCaptchaServiceImpl" />
-      <module name="tx" />
+    <configuration name="ContentCheckController.testScanText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.tx.service.Impl.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.qy.contentChcek.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.ContentCheckController" />
+      <option name="METHOD_NAME" value="testScanText" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -184,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TxApplication" />
-        <item itemvalue="Application.TxCaptchaServiceImpl" />
-        <item itemvalue="Application.EasyEsApplication" />
-        <item itemvalue="Application.ChatgptApplication" />
-        <item itemvalue="Application.NacosApplication" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.ImageCheck" />
+        <item itemvalue="Application.TextCheck" />
+        <item itemvalue="Application.GreenTextCheck" />
+        <item itemvalue="JUnit.ContentCheckController.testScanText" />
       </list>
     </recent_temporary>
   </component>
@@ -217,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1679911388833</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="feat: 添加一个微信小程序的键盘组件">
+      <option name="closed" value="true" />
+      <created>1692838975439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692838975439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -233,11 +265,62 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="feat: 添加esay-es demo" />
     <MESSAGE value="feat: 添加chatgpt demo" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加chatgpt demo" />
+    <MESSAGE value="feat: 添加一个微信小程序的键盘组件" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加一个微信小程序的键盘组件" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/excel/src/main/java/com/qy/ExcelReaderDemo.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/GreenTextCheck.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/GreenTextCheck.java</url>
+          <line>193</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/GreenTextCheck.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/TextCheck.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/ImageCheck.java</url>
+          <line>89</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/ImageCheck.java</url>
+          <line>162</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/test.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.aliyun.imageaudit20191230.models.ScanTextResponseBody" memberName="data" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

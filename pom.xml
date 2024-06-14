@@ -16,6 +16,8 @@
         <module>redis</module>
         <module>springsecurity</module>
         <module>tx</module>
+<!--        <module>excel</module>-->
+        <module>content-check</module>
     </modules>
 
     <repositories>
