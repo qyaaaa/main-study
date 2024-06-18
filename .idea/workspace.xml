@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b422eee1-b86b-4895-a774-95adb52fbe33" name="Changes" comment="feat: 添加一个微信小程序的键盘组件">
-      <change afterPath="$PROJECT_DIR$/content-check/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/ImageCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/ImageCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/VideoCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/VideoCheck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +24,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feat-tx" />
+        <entry key="$PROJECT_DIR$" value="feat-keyboard" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -39,12 +39,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="feat-keyboard" />
-                    <option name="lastUsedInstant" value="1692838924" />
+                    <option name="branchName" value="feat-0614" />
+                    <option name="lastUsedInstant" value="1718346580" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1681464444" />
+                    <option name="lastUsedInstant" value="1718346397" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feat-keyboard" />
+                    <option name="lastUsedInstant" value="1692838924" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="fix-pom" />
@@ -73,15 +77,15 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "jdk.selected.JAVA_MODULE": "zulu-1.8",
-    "last_opened_file_path": "C:/project/ky/ky-platform-api",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;zulu-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/project/ky/ky-platform-api&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\project\qy\main-study\content-check\src\main\resources" />
@@ -95,13 +99,13 @@
       <recent name="com.qy.tx.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.test">
+  <component name="RunManager" selected="Application.VideoCheck">
     <configuration name="GreenTextCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.GreenTextCheck" />
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.demo.GreenTextCheck" />
       <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,11 +114,24 @@
       </method>
     </configuration>
     <configuration name="ImageCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.ImageCheck" />
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.demo.ImageCheck" />
       <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrongTextCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.demo.StrongTextCheck" />
+      <module name="content-check" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qy.contentChcek.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,11 +140,11 @@
       </method>
     </configuration>
     <configuration name="TextCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.TextCheck" />
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.demo.TextCheck" />
       <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,31 +152,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.test" />
+    <configuration name="VideoCheck" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.demo.VideoCheck" />
       <module name="content-check" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
+          <option name="PATTERN" value="com.qy.contentChcek.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContentCheckController.testScanText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="content-check" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qy.contentChcek.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qy.contentChcek.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.qy.contentChcek.controller.ContentCheckController" />
-      <option name="METHOD_NAME" value="testScanText" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -208,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.test" />
+        <item itemvalue="Application.VideoCheck" />
         <item itemvalue="Application.ImageCheck" />
         <item itemvalue="Application.TextCheck" />
         <item itemvalue="Application.GreenTextCheck" />
-        <item itemvalue="JUnit.ContentCheckController.testScanText" />
+        <item itemvalue="Application.StrongTextCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -276,44 +277,54 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/excel/src/main/java/com/qy/ExcelReaderDemo.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/GreenTextCheck.java</url>
-          <line>69</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/GreenTextCheck.java</url>
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/StrongTextCheck.java</url>
           <line>193</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/GreenTextCheck.java</url>
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/StrongTextCheck.java</url>
           <line>146</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/TextCheck.java</url>
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/GreenTextCheck.java</url>
           <line>47</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/ImageCheck.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/ImageCheck.java</url>
-          <line>162</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/controller/test.java</url>
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/TextCheck.java</url>
           <line>68</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/VideoCheck.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/VideoCheck.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/VideoCheck.java</url>
+          <line>175</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/ImageCheck.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/ImageCheck.java</url>
+          <line>92</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/content-check/src/main/java/com/qy/contentChcek/demo/ImageCheck.java</url>
+          <line>104</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -322,5 +333,10 @@
         <PinnedItemInfo parentTag="com.aliyun.imageaudit20191230.models.ScanTextResponseBody" memberName="data" />
       </pinned-members>
     </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="taskResult" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

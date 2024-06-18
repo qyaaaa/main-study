@@ -33,10 +33,10 @@ public class ImageCheck {
     public static void main(String[] args) throws Exception {
 
         DefaultProfile profile = DefaultProfile.getProfile(
-                "cn-shanghai",
+                "cn-beijing",
                 accessKeyId,
                 accessKeySecret);
-        DefaultProfile.addEndpoint("cn-shanghai", "Green", "green.cn-shanghai.aliyuncs.com");
+        DefaultProfile.addEndpoint("cn-beijing", "Green", "green.cn-beijing.aliyuncs.com");
         // 注意：此处实例化的client尽可能重复使用，提升检测性能。避免重复建立连接。
         IAcsClient client = new DefaultAcsClient(profile);
 
@@ -68,7 +68,8 @@ public class ImageCheck {
         task.put("dataId", UUID.randomUUID().toString());
 
         // 设置图片链接。URL中有特殊字符，需要对URL进行encode编码。
-        task.put("url", "http://www.aliyundoc.com/xxx.test.jpg");
+//        task.put("url", "https://keyin-stage.oss-cn-beijing.aliyuncs.com/image/avatar/ce89ac323a99481c81f3aa1ccaf37cb4dfc3.png");
+        task.put("url", "https://keyin-stage.oss-cn-beijing.aliyuncs.com/image/post/913faeb8b7d3c5eb8c6e5910b5a3596a4715.jpg");
         task.put("time", new Date());
         httpBody.put("tasks", Arrays.asList(task));
 
