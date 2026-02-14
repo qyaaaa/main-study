@@ -26,6 +26,8 @@ public class TxCosServiceImpl implements TxCosService {
     @Autowired
     CosConfig cosConfig;
 
+    // 生产签名：https://cloud.tencent.com/document/product/436/14048
+
     @Override
     public Object upload(MultipartFile file, String path) {
         if (file == null) {
